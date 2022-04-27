@@ -6,6 +6,7 @@ body {
 }
 header {
 	background: #F4D03F;
+
 }
 li {
 	display: inline-block;
@@ -41,10 +42,19 @@ h1 {
 }
 h4 {
 	font-size: 40px;
+	margin-top: 20px;
+	margin-bottom: 30px;
 }
 h5 {
 	font-size: 40px;
+	margin-top: 20px;
+	margin-bottom: 30px;
 }
 h6 {
 	font-size: 40px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.foto {
+	border-radius: 10%;
 }
