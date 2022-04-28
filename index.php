@@ -7,17 +7,18 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
-	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/estilos.css">
+
 
 </head>	
 <body>
 	<div class="container">
-		<img src="logo.jpg" width="90" class="logo">
+		<img src="<?php bloginfo('template_url'); ?>/logo.jpg" width="90" class="logo">
 	</div>
 	<header class="container-flip">
 		<center>
-			<h1> Schnauzaer	</h1>
-		<img src="mini.png" width="700" height="350">
+			<h1> <?php bloginfo('name');?>	</h1>
+		<img src="<?php bloginfo('template_url'); ?>/mini.png" width="700" height="350">
 	</header>
 		<nav>
 			<ul>
@@ -31,10 +32,20 @@
 		</nav>	
 		</center>
 
-
 	<section class="container">
+
+		<?php $articulos = new WP_Query([
+			'showposts' => 3
+		]);
+		while ($articulos->have_posts()) {
+				$articulos->the_post();
+
+		the_title();
+		echo '<hr>';
+} ?>
+
 		<center>
-		<img src="mini1.jpg" width="400" class="foto">
+		<img src="<?php bloginfo('template_url'); ?>/mini1.jpg" width="400" class="foto">
 
 		<h4><a href="">
 		Perro perdido de la Molina</h4></a>
@@ -45,7 +56,7 @@
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-		<img src="mini2.jpg" width="400" class="foto">
+		<img src="<?php bloginfo('template_url'); ?>/mini2.jpg" width="400" class="foto">
 
 		<h5><a href="">
 		Perro con Sed</h5></a>
@@ -56,7 +67,7 @@
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-		<img src="mini3.jpg" width="400" class="foto">
+		<img src="<?php bloginfo('template_url'); ?>/mini3.jpg" width="400" class="foto">
 
 		<h6><a href="">
 		Pareja de perros</h6></a>
