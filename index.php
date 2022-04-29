@@ -38,11 +38,25 @@
 			'showposts' => 3
 		]);
 		while ($articulos->have_posts()) {
-				$articulos->the_post();
+				$articulos->the_post(); ?>
+		
 
-		the_title();
-		echo '<hr>';
-} ?>
+
+
+		<?php the_post_thumbnail("medium");?>
+		
+
+		<h4><?php the_title();?></h4>
+		<?php the_excerpt();?>
+		
+
+
+
+
+
+		<?php } ?>
+
+
 
 		<center>
 		<img src="<?php bloginfo('template_url'); ?>/mini1.jpg" width="400" class="foto">

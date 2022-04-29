@@ -44,16 +44,19 @@ h4 {
 	font-size: 40px;
 	margin-top: 20px;
 	margin-bottom: 30px;
+	text-align: center;
 }
 h5 {
 	font-size: 40px;
 	margin-top: 20px;
 	margin-bottom: 30px;
+	text-align: center;
 }
 h6 {
 	font-size: 40px;
 	margin-top: 20px;
 	margin-bottom: 30px;
+	text-align: center;
 }
 .foto {
 	border-radius: 10%;
