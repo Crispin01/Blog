@@ -61,3 +61,17 @@ h6 {
 .foto {
 	border-radius: 10%;
 }
+.caja {
+	border: 2px solid black;
+	margin-bottom: 20px;
+	background: #F4D03F;
+}
+.imagen {
+	margin-top: 30px;
+	
+}
+div h4 {
+	font-family: 'Bebas Neue', cursive;
+	
+	
+}

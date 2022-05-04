@@ -42,13 +42,17 @@
 		
 
 
+		<div class="row caja">
+			<div class="col-sm-3 imagen">
+		 		<?php the_post_thumbnail("thumbnail"); ?>
+			</div>  
 
-		<?php the_post_thumbnail("medium");?>
-		
-
-		<h4><?php the_title();?></h4>
-		<?php the_excerpt();?>
-		
+			<div class="col-sm-9">	
+		 		<h4><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
+		 		<p>Publicado por <?php the_author();?> el <?php the_time("d/m/Y");?></p>
+		 		<?php the_excerpt(); ?>
+			</div>
+		</div>		
 
 
 
@@ -58,7 +62,6 @@
 
 
 
-		<center>
 		<img src="<?php bloginfo('template_url'); ?>/mini1.jpg" width="400" class="foto">
 
 		<h4><a href="">
@@ -91,7 +94,6 @@
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</center>
 	</section>
 
 	<footer class="container-flip">
