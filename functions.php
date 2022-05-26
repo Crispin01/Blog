@@ -10,6 +10,10 @@ register_post_type("empleos", [
 "public" => true
 ]);
 
+register_nav_menus([
+	'principal' => 'Zona principal'
+]);
+
 }
 
 
